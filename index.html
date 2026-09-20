@@ -60,6 +60,7 @@
   ]
 }
 </script>
+<script>(function(){try{if(localStorage.getItem('arsal-theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}})()</script>
 </head>
 <body>
 
@@ -77,11 +78,23 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a href="https://wa.me/923195981362?text=Hi%2C+I+want+to+know+more+about+Arsal+Digital+IPTV" target="_blank" class="nav-cta btn-whatsapp">
+    <div class="nav-actions">
+      <a href="https://wa.me/923195981362?text=Hi%2C+I+want+to+know+more+about+Arsal+Digital+IPTV" target="_blank" class="nav-cta btn-whatsapp">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
       WhatsApp Us
     </a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button type="button" class="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <defs><mask id="tiMask" maskUnits="userSpaceOnUse" x="-6" y="-6" width="36" height="36"><rect x="-6" y="-6" width="36" height="36" fill="#fff"/><circle class="ti-cut" cx="30" cy="-6" r="7" fill="#000"/></mask></defs>
+          <g mask="url(#tiMask)"><circle class="ti-core" cx="12" cy="12" r="5" fill="currentColor"/></g>
+          <g class="ti-rays" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+            <line x1="4.9" y1="4.9" x2="6.3" y2="6.3"/><line x1="17.7" y1="17.7" x2="19.1" y2="19.1"/><line x1="4.9" y1="19.1" x2="6.3" y2="17.7"/><line x1="17.7" y1="6.3" x2="19.1" y2="4.9"/>
+          </g>
+        </svg>
+      </button>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
     <a href="./">Home</a>
@@ -213,7 +226,7 @@
 <!-- APP SETUP GUIDE TILE -->
 <section style="padding-top:0;padding-bottom:0">
   <div class="max-w reveal">
-    <a href="iptv-app-setup-guide.html" class="feat-card" style="display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;padding:32px 36px;border-color:var(--border2);background:linear-gradient(135deg,#fff 0%,var(--bg2) 100%)">
+    <a href="iptv-app-setup-guide.html" class="feat-card" style="display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;padding:32px 36px;border-color:var(--border2);background:linear-gradient(135deg,var(--card) 0%,var(--bg2) 100%)">
       <div style="display:flex;align-items:flex-start;gap:20px;flex:1 1 440px">
         <div class="feat-icon g" style="width:60px;height:60px;margin-bottom:0;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M10 8.5l4 2-4 2z"/></svg></div>
         <div>
