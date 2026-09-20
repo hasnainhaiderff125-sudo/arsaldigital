@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IPTV App Setup Guide — Best Players for Every Device | Arsal Digital</title>
-<meta name="description" content="Step-by-step IPTV app setup for Android phone, Android TV & box, Amazon Firestick (Downloader code), Samsung & LG TV (Hot Player, IBO Player) and iPhone (Smarters Player Lite). Get help on WhatsApp.">
+<meta name="description" content="Simple IPTV app setup for Android phone, Android TV & box, Amazon Firestick (Downloader code), Samsung & LG TV (Hot Player, IBO Player) and iPhone. Get help on WhatsApp.">
 <link rel="canonical" href="https://arsaldigital.com/iptv-app-setup-guide.html">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png">
 <meta name="theme-color" content="#1AA34A">
 <meta property="og:title" content="IPTV App Setup Guide — Best Players for Every Device | Arsal Digital">
-<meta property="og:description" content="Step-by-step IPTV app setup for Android phone, Android TV & box, Amazon Firestick (Downloader code), Samsung & LG TV (Hot Player, IBO Player) and iPhone (Smarters Player Lite). Get help on WhatsApp.">
+<meta property="og:description" content="Simple IPTV app setup for Android phone, Android TV & box, Amazon Firestick (Downloader code), Samsung & LG TV (Hot Player, IBO Player) and iPhone. Get help on WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://arsaldigital.com/iptv-app-setup-guide.html">
 <meta property="og:image" content="https://arsaldigital.com/assets/og-image.jpg">
@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="Arsal Digital">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="IPTV App Setup Guide — Best Players for Every Device | Arsal Digital">
-<meta name="twitter:description" content="Step-by-step IPTV app setup for Android phone, Android TV & box, Amazon Firestick (Downloader code), Samsung & LG TV (Hot Player, IBO Player) and iPhone (Smarters Player Lite). Get help on WhatsApp.">
+<meta name="twitter:description" content="Simple IPTV app setup for Android phone, Android TV & box, Amazon Firestick (Downloader code), Samsung & LG TV (Hot Player, IBO Player) and iPhone. Get help on WhatsApp.">
 <meta name="twitter:image" content="https://arsaldigital.com/assets/og-image.jpg">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,51 +29,41 @@
 <link rel="stylesheet" href="style.css">
 <style>
 /* ===== App Setup Guide page only ===== */
-section[id]{scroll-margin-top:84px}
-.jump{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px auto 0;max-width:900px}
-.jump a{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--border2);border-radius:100px;padding:10px 18px;font-size:13.5px;font-weight:700;color:var(--text2);transition:.2s}
-.jump a:hover{border-color:var(--accent);color:var(--accent-dark);transform:translateY(-2px)}
-.jump svg{width:17px;height:17px;flex-shrink:0}
-.need-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.need-grid .step-card h3{margin-bottom:8px;font-size:16px}
-.need-grid .step-card p{font-size:14px;color:var(--text2)}
-.picker{max-width:900px;margin:0 auto;background:#fff;border:1px solid var(--border2);border-radius:var(--radius-l);box-shadow:var(--shadow-2);padding:30px}
-.picker h3{font-size:19px;margin-bottom:6px}
-.picker>p{font-size:14px;color:var(--text2);margin-bottom:18px}
-.pick-opts{display:flex;flex-wrap:wrap;gap:10px}
-.pick-btn{padding:11px 20px;border-radius:100px;border:1.5px solid var(--border2);background:#fff;font-weight:700;font-size:14px;cursor:pointer;color:var(--text2);transition:.2s;font-family:inherit}
-.pick-btn:hover{border-color:var(--accent);color:var(--accent-dark)}
-.pick-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
-.pick-result{display:none;margin-top:22px;padding-top:22px;border-top:1px solid var(--border)}
-.pick-result.show{display:block}
-.pick-result .pr-label{font-size:12.5px;font-weight:700;color:var(--text3);margin-bottom:4px}
-.pick-result .pr-app{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:var(--accent-dark);margin-bottom:6px}
-.pick-result p{font-size:14.5px;color:var(--text2);max-width:640px}
-.pr-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
-.pr-actions .btn-primary,.pr-actions .btn-whatsapp{padding:12px 22px;font-size:14px}
-.dev-head{max-width:1200px;margin:0 auto 26px;display:flex;gap:16px;align-items:center}
-.dev-head .feat-icon{margin-bottom:0;flex-shrink:0;width:52px;height:52px}
-.dev-head h2{font-size:clamp(22px,3vw,30px);font-weight:800}
-.dev-head p{font-size:14.5px;color:var(--text2);margin-top:4px;max-width:680px}
-.guide-steps{max-width:1200px;margin:0 auto 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.guide-step{background:#fff;border:1px solid var(--border);border-radius:var(--radius-m);padding:20px;display:flex;gap:14px;align-items:flex-start}
-.guide-step .step-num{margin-bottom:0;flex-shrink:0}
-.guide-step h3{font-size:15px;margin-bottom:4px}
-.guide-step p{font-size:13.5px;color:var(--text2)}
-.app-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.app-grid.two{grid-template-columns:repeat(2,minmax(0,386px));justify-content:start}
-.app-grid.one{grid-template-columns:minmax(0,386px);justify-content:start}
-.app-grid.four{grid-template-columns:repeat(4,1fr)}
-.app-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-m);padding:22px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
-.app-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-2);border-color:var(--border2)}
+.dev-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:900px;margin:0 auto 36px}
+.dev-tab{padding:12px 22px;border-radius:100px;border:1.5px solid var(--border2);background:#fff;font-weight:700;font-size:14.5px;color:var(--text2);cursor:pointer;font-family:inherit;transition:.2s}
+.dev-tab:hover{border-color:var(--accent);color:var(--accent-dark)}
+.dev-tab:focus-visible{outline:3px solid rgba(26,163,74,.35);outline-offset:2px}
+.dev-tab.active{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(26,163,74,.25)}
+.dev-panel{display:none;max-width:1100px;margin:0 auto}
+.dev-panel.active{display:block;animation:panelIn .3s ease}
+@keyframes panelIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.dev-panel.active{animation:none}}
+.panel-head{text-align:center;margin-bottom:26px}
+.panel-head h2{font-size:clamp(22px,3vw,30px);font-weight:800}
+.panel-head p{font-size:14.5px;color:var(--text2);margin-top:6px}
+.panel-grid{display:grid;grid-template-columns:340px minmax(0,1fr);gap:24px;align-items:start}
+.steps-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-m);padding:24px}
+.steps-card h3{font-size:16px;margin-bottom:16px}
+.steps-list{list-style:none;counter-reset:st;display:flex;flex-direction:column;gap:14px;padding:0;margin:0}
+.steps-list li{counter-increment:st;display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--text2);line-height:1.6}
+.steps-list li::before{content:counter(st);flex-shrink:0;width:26px;height:26px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.steps-list b{color:var(--text)}
+.small-tip{font-size:12.5px;color:var(--text3);margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
+.app-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.app-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-m);padding:20px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+.app-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-2);border-color:var(--border2)}
 .app-card.rec{border-color:var(--accent);box-shadow:0 10px 30px rgba(26,163,74,.14)}
+.app-card.wide{grid-column:1/-1}
 .app-top{display:flex;gap:14px;align-items:center;margin-bottom:12px}
 .app-logo{width:54px;height:54px;border-radius:14px;background:var(--accent3);position:relative;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-1)}
 .app-logo .mono{font-family:'Sora',sans-serif;font-weight:800;color:var(--accent-dark);font-size:18px}
 .app-logo img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0}
-.app-logo.has-img img{opacity:1;background:#fff}
+.app-logo.has-img{background:transparent;box-shadow:none}
+.app-logo.has-img img{opacity:1}
 .app-logo.has-img .mono{display:none}
-.app-card h3{font-size:16.5px;font-weight:700}
+.app-logo.ios-ico{color:var(--accent-dark)}
+.app-logo.ios-ico svg{width:26px;height:26px}
+.app-card h3{font-size:16px;font-weight:700;line-height:1.3}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
 .tag{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:100px;line-height:1.5}
 .tag.free{background:var(--accent3);color:var(--accent-dark)}
@@ -86,21 +76,26 @@ section[id]{scroll-margin-top:84px}
 .app-actions .get:hover{background:var(--accent-dark)}
 .app-actions .ask{border:1.5px solid var(--border2);color:var(--text)}
 .app-actions .ask:hover{border-color:#25D366;color:#128C7E}
-.note{max-width:1200px;margin:22px auto 0;border-radius:var(--radius-m);padding:16px 20px;font-size:14px;color:var(--text2);border:1px solid var(--border2);background:var(--bg3)}
+.app-actions .wa{background:#25D366;color:#fff}
+.app-actions .wa:hover{background:#1EBE5A}
+.note{border-radius:var(--radius-m);padding:16px 20px;font-size:14px;color:var(--text2);border:1px solid var(--border2);background:var(--bg3);margin-bottom:24px}
 .note b{color:var(--text)}
 .note.warn{background:#FBF3DD;border-color:#F0DDA8}
-.code-box{max-width:1200px;margin:0 auto 26px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;border-radius:var(--radius-l);padding:26px 30px;display:flex;gap:22px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.code-box h3{color:#fff;font-size:20px;margin-bottom:6px}
-.code-box p{color:rgba(255,255,255,.92);font-size:14.5px;max-width:620px}
+.mini-note{text-align:center;font-size:13.5px;color:var(--text2);margin-top:22px}
+.mini-note a{color:var(--accent-dark);font-weight:700}
+.code-box{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;border-radius:var(--radius-l);padding:24px 28px;display:flex;gap:22px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:24px}
+.code-box h3{color:#fff;font-size:19px;margin-bottom:4px}
+.code-box p{color:rgba(255,255,255,.92);font-size:14px;max-width:560px}
 .code-box .btn-whatsapp{background:#fff;color:#0E7E37;box-shadow:0 8px 22px rgba(0,0,0,.18)}
 .code-box .btn-whatsapp svg{fill:#25D366}
-.chip-note{max-width:1200px;margin:22px auto 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:13.5px;color:var(--text2)}
-.chip-note a{background:#fff;border:1px solid var(--border);border-radius:100px;padding:8px 16px;font-weight:600;color:var(--text2);transition:.2s}
-.chip-note a:hover{border-color:var(--accent);color:var(--accent-dark)}
-.disclaimer{max-width:900px;margin:0 auto;text-align:center;font-size:12.5px;color:var(--text3)}
-@media(max-width:1000px){.app-grid,.app-grid.two,.app-grid.four{grid-template-columns:1fr 1fr}.need-grid{grid-template-columns:1fr}}
-@media(max-width:620px){.app-grid,.app-grid.two,.app-grid.four,.app-grid.one{grid-template-columns:1fr}.dev-head{align-items:flex-start}.code-box{padding:22px}.picker{padding:22px}.code-box .btn-whatsapp{width:100%;justify-content:center}}
+.chip-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:900px;margin:0 auto}
+.chip-row a{background:#fff;border:1px solid var(--border);border-radius:100px;padding:9px 16px;font-size:13.5px;font-weight:600;color:var(--text2);transition:.2s}
+.chip-row a:hover{border-color:var(--accent);color:var(--accent-dark)}
+.disclaimer{max-width:820px;margin:26px auto 0;text-align:center;font-size:12.5px;color:var(--text3)}
+@media(max-width:900px){.panel-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.app-grid{grid-template-columns:1fr}.code-box{padding:22px}.code-box .btn-whatsapp{width:100%;justify-content:center}.dev-tab{padding:10px 16px;font-size:13.5px}.steps-card{padding:20px}}
 </style>
+<noscript><style>.dev-panel{display:block!important;margin-bottom:44px}.dev-tabs{display:none}</style></noscript>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -118,7 +113,7 @@ section[id]{scroll-margin-top:84px}
       "name": "Which app is best for my device?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For Android phones, tablets and TVs we suggest XCIPTV Player. On Samsung and LG TVs use IBO Player or Hot Player. On iPhone and iPad use Smarters Player Lite. Not sure? Message us and we will pick one for you."
+        "text": "For Android phones, tablets and TVs we suggest XCIPTV Player. On Samsung and LG TVs use IBO Player or Hot Player. For iPhone and iPad, message us and we will guide you."
       }
     },
     {
@@ -134,23 +129,7 @@ section[id]{scroll-margin-top:84px}
       "name": "Where do I get the Downloader code for Firestick?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Downloader codes can change when app developers update their links, so we confirm the current code for you on WhatsApp before you install. Tap any “Get Downloader code” button and we will reply with it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between Xtream Codes and M3U?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Xtream Codes is a server URL, username and password. It loads channels, movies, series and the TV guide in one login. M3U is a single playlist link. Use whichever your app supports. We provide both."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do these apps come with channels?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. These apps are players only. Your channels, movies and series come from your Arsal Digital subscription."
+        "text": "Downloader codes can change when app developers update their links, so we confirm the current code for you on WhatsApp before you install. Tap any “Get code” button and we will reply with it."
       }
     },
     {
@@ -197,293 +176,179 @@ section[id]{scroll-margin-top:84px}
 
 <div class="page-hero">
   <div class="breadcrumb"><a href="./">Home</a> / App Setup Guide</div>
-  <h1 class="sec-title" style="max-width:760px;margin:0 auto 12px">IPTV App Setup Guide for Every Device</h1>
-  <p class="sec-sub" style="margin:0 auto">Pick your device, install the right player and log in within minutes. Stuck at any step? We are one WhatsApp message away.</p>
-  <nav class="jump" aria-label="Jump to your device">
-    <a href="#android-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg>Android Phone</a>
-    <a href="#android-tv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="9" rx="2.5"/><path d="M7 12.5h.01M11 12.5h6"/><path d="M8 8V6M16 8V6"/></svg>Android TV &amp; Box</a>
-    <a href="#firestick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="14" height="7" rx="2"/><path d="M17 12.5h3.5M6.5 12.5h4"/></svg>Amazon Firestick</a>
-    <a href="#samsung-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12" rx="2"/><path d="M9 20h6M12 16v4"/><path d="M8.5 10.2a5 5 0 0 1 7 0M10.3 12a2.5 2.5 0 0 1 3.4 0"/></svg>Samsung &amp; LG TV</a>
-    <a href="#iphone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5h3"/><path d="M12 19h.01"/></svg>iPhone &amp; iPad</a>
-  </nav>
+  <h1 class="sec-title" style="max-width:760px;margin:0 auto 12px">IPTV App Setup Guide</h1>
+  <p class="sec-sub" style="margin:0 auto">Pick your device, install a player and log in. These apps are players only, so your channels come from your Arsal Digital plan. Stuck? We are one WhatsApp message away.</p>
 </div>
 
-<!-- BEFORE YOU START -->
-<section style="padding-bottom:40px">
-  <div class="max-w text-center">
-    <div class="sec-eye">Before You Start</div>
-    <h2 class="sec-title">What You Need</h2>
-    <p class="sec-sub" style="margin:0 auto 36px">Three things and you are ready. The apps below are only players, so your channels come from your Arsal Digital subscription.</p>
+<section style="padding-top:56px">
+  <div class="dev-tabs" role="tablist" aria-label="Choose your device"><button type="button" class="dev-tab active" role="tab" id="tab-android-phone" data-tab="android-phone" aria-selected="true" aria-controls="android-phone" tabindex="0">Android Phone</button><button type="button" class="dev-tab" role="tab" id="tab-android-tv" data-tab="android-tv" aria-selected="false" aria-controls="android-tv" tabindex="-1">Android TV &amp; Box</button><button type="button" class="dev-tab" role="tab" id="tab-firestick" data-tab="firestick" aria-selected="false" aria-controls="firestick" tabindex="-1">Firestick</button><button type="button" class="dev-tab" role="tab" id="tab-samsung-lg" data-tab="samsung-lg" aria-selected="false" aria-controls="samsung-lg" tabindex="-1">Samsung &amp; LG</button><button type="button" class="dev-tab" role="tab" id="tab-iphone" data-tab="iphone" aria-selected="false" aria-controls="iphone" tabindex="-1">iPhone &amp; iPad</button></div>
+
+  <div class="dev-panel active" id="android-phone" role="tabpanel" aria-labelledby="tab-android-phone">
+    <div class="panel-head"><h2>Android Phone &amp; Tablet</h2><p>Install from Google Play, then log in with Xtream Codes.</p></div><div class="panel-grid"><div class="steps-card"><h3>Setup in 3 steps</h3><ol class="steps-list"><li><span><b>Install</b> one of the apps from Google Play.</span></li><li><span><b>Open it</b> and choose Xtream Codes login.</span></li><li><span><b>Enter</b> the server URL, username and password we send you on WhatsApp.</span></li></ol></div><div class="app-grid">
+        <article class="app-card rec">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">XC</span><img src="assets/apps/xciptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>XCIPTV Player</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag free">Free</span></div></div>
+          </div>
+          <p>Our first pick. TV guide, favorites and catch-up.</p>
+          <div class="app-actions"><a class="get" href="https://play.google.com/store/apps/details?id=com.nathnetwork.xciptv" target="_blank" rel="noopener">Get on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20XCIPTV%20Player%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">TZ</span><img src="assets/apps/televizo.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>Televizo</h3><div class="tags"><span class="tag free">Free + Premium option</span></div></div>
+          </div>
+          <p>Simple and stable, with multiple playlists.</p>
+          <div class="app-actions"><a class="get" href="https://play.google.com/store/apps/details?id=com.ottplay.ottplay" target="_blank" rel="noopener">Get on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Televizo%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">XP</span><img src="assets/apps/xp-iptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>XP IPTV</h3><div class="tags"><span class="tag free">Android</span></div></div>
+          </div>
+          <p>Install it from Google Play and log in with our details.</p>
+          <div class="app-actions"><a class="get" href="https://play.google.com/store/search?c=apps&amp;q=XP%20IPTV" target="_blank" rel="noopener">Search on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20XP%20IPTV%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">XM</span><img src="assets/apps/xtreme-master.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>Xtreme Master OTT Player</h3><div class="tags"><span class="tag free">Android</span></div></div>
+          </div>
+          <p>Install it from Google Play and log in with our details.</p>
+          <div class="app-actions"><a class="get" href="https://play.google.com/store/search?c=apps&amp;q=Xtreme%20Master%20OTT%20Player" target="_blank" rel="noopener">Search on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Xtreme%20Master%20OTT%20Player%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+      </div></div>
   </div>
-  <div class="need-grid">
-    <div class="step-card reveal"><div class="step-num">1</div><h3>An active subscription</h3><p>Not subscribed yet? <a href="packages.html" style="color:var(--accent-dark);font-weight:700">See our PKR packages</a> or ask for a free trial on WhatsApp.</p></div>
-    <div class="step-card reveal"><div class="step-num">2</div><h3>Your login details</h3><p>We send your Xtream Codes login (server URL, username, password) or your M3U link on WhatsApp after you order.</p></div>
-    <div class="step-card reveal"><div class="step-num">3</div><h3>A stable internet connection</h3><p>Wi-Fi or LAN both work. Not sure about your speed? Read our <a href="best-internet-speed-for-iptv-streaming.html" style="color:var(--accent-dark);font-weight:700">internet speed guide</a>.</p></div>
+  <div class="dev-panel" id="android-tv" role="tabpanel" aria-labelledby="tab-android-tv">
+    <div class="panel-head"><h2>Android TV &amp; TV Box</h2><p>For Android TV, Google TV, Mi Box, Nvidia Shield and most boxes.</p></div><div class="panel-grid"><div class="steps-card"><h3>Setup in 3 steps</h3><ol class="steps-list"><li><span><b>Open Google Play</b> on your TV or box and search for the app.</span></li><li><span><b>Install and open</b> it with your remote.</span></li><li><span><b>Log in</b> with the details we send you. Tip: use your phone as a remote keyboard to type faster.</span></li></ol></div><div class="app-grid">
+        <article class="app-card rec">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">XC</span><img src="assets/apps/xciptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>XCIPTV Player</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag free">Free</span></div></div>
+          </div>
+          <p>Our first pick. Made for the remote, with a full TV guide.</p>
+          <div class="app-actions"><a class="get" href="https://play.google.com/store/apps/details?id=com.nathnetwork.xciptv" target="_blank" rel="noopener">Get on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20XCIPTV%20Player%20on%20my%20Android%20TV%20%2F%20TV%20box." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">TZ</span><img src="assets/apps/televizo.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>Televizo</h3><div class="tags"><span class="tag free">Free + Premium option</span></div></div>
+          </div>
+          <p>Smooth on Android TV and boxes, with multiple playlists.</p>
+          <div class="app-actions"><a class="get" href="https://play.google.com/store/apps/details?id=com.ottplay.ottplay" target="_blank" rel="noopener">Get on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Televizo%20on%20my%20Android%20TV%20%2F%20TV%20box." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">XP</span><img src="assets/apps/xp-iptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>XP IPTV</h3><div class="tags"><span class="tag free">Android TV</span></div></div>
+          </div>
+          <p>Install it from Google Play and log in with our details.</p>
+          <div class="app-actions"><a class="get" href="https://play.google.com/store/search?c=apps&amp;q=XP%20IPTV" target="_blank" rel="noopener">Search on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20XP%20IPTV%20on%20my%20Android%20TV%20%2F%20TV%20box." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">XM</span><img src="assets/apps/xtreme-master.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>Xtreme Master OTT Player</h3><div class="tags"><span class="tag free">Android TV</span></div></div>
+          </div>
+          <p>Install it from Google Play and log in with our details.</p>
+          <div class="app-actions"><a class="get" href="https://play.google.com/store/search?c=apps&amp;q=Xtreme%20Master%20OTT%20Player" target="_blank" rel="noopener">Search on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Xtreme%20Master%20OTT%20Player%20on%20my%20Android%20TV%20%2F%20TV%20box." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+      </div></div><p class="mini-note">No Play Store on your box? <a href="https://wa.me/923195981362?text=Hi%2C%20my%20Android%20TV%20box%20has%20no%20Play%20Store.%20Please%20send%20me%20a%20Downloader%20code." target="_blank" rel="noopener">Message us</a> and we will show you another way to install.</p>
+  </div>
+  <div class="dev-panel" id="firestick" role="tabpanel" aria-labelledby="tab-firestick">
+    <div class="panel-head"><h2>Amazon Firestick &amp; Fire TV</h2><p>Firestick apps are installed with the Downloader app and a short code.</p></div><div class="code-box"><div><h3>Confirm your Downloader code on WhatsApp first</h3><p>Codes change when app developers update their links. We will send you the current working code.</p></div><a class="btn-whatsapp" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20my%20Amazon%20Firestick." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Get my Downloader code</a></div><div class="panel-grid"><div class="steps-card"><h3>Setup in 4 steps</h3><ol class="steps-list"><li><span><b>Install Downloader</b> from the Amazon Appstore.</span></li><li><span><b>Allow installs:</b> Settings &rsaquo; My Fire TV &rsaquo; Developer Options &rsaquo; Install unknown apps &rsaquo; turn Downloader ON.</span></li><li><span><b>Enter the code</b> we send you in Downloader, press Go, then Install.</span></li><li><span><b>Open the app</b> and log in with your details.</span></li></ol><p class="small-tip">No Developer Options? Go to Settings &rsaquo; My Fire TV &rsaquo; About and click your device name 7 times.</p></div><div class="app-grid">
+        <article class="app-card rec">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">XC</span><img src="assets/apps/xciptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>XCIPTV Player</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag free">Free</span></div></div>
+          </div>
+          <p>Our first pick for Firestick. Free and fast.</p>
+          <div class="app-actions"><a class="wa" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20XCIPTV%20Player%20on%20my%20Amazon%20Firestick." target="_blank" rel="noopener">Get code on WhatsApp</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">XP</span><img src="assets/apps/xp-iptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>XP IPTV</h3><div class="tags"><span class="tag free">Fire TV</span></div></div>
+          </div>
+          <p>Ask us for the current Downloader code.</p>
+          <div class="app-actions"><a class="wa" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20XP%20IPTV%20on%20my%20Amazon%20Firestick." target="_blank" rel="noopener">Get code on WhatsApp</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">IB</span><img src="assets/apps/ibo-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>IBO Player</h3><div class="tags"><span class="tag paid">Paid after trial</span></div></div>
+          </div>
+          <p>Free trial, then a paid activation.</p>
+          <div class="app-actions"><a class="wa" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20IBO%20Player%20on%20my%20Amazon%20Firestick." target="_blank" rel="noopener">Get code on WhatsApp</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">HP</span><img src="assets/apps/hot-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>Hot Player</h3><div class="tags"><span class="tag paid">Paid after trial</span></div></div>
+          </div>
+          <p>Free trial, then a paid activation.</p>
+          <div class="app-actions"><a class="wa" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20Hot%20Player%20on%20my%20Amazon%20Firestick." target="_blank" rel="noopener">Get code on WhatsApp</a></div>
+        </article>
+      </div></div>
+  </div>
+  <div class="dev-panel" id="samsung-lg" role="tabpanel" aria-labelledby="tab-samsung-lg">
+    <div class="panel-head"><h2>Samsung &amp; LG Smart TV</h2><p>Hot Player and IBO Player are the two players we recommend.</p></div><div class="note warn"><b>Good to know:</b> free IPTV players are not available in the Samsung and LG stores. Hot Player and IBO Player offer a free trial, then a paid activation on their official website. That fee goes to the app developer, not to us.</div><div class="panel-grid"><div class="steps-card"><h3>Setup in 4 steps</h3><ol class="steps-list"><li><span><b>Install</b> Hot Player or IBO Player from Samsung Smart Hub or the LG Content Store.</span></li><li><span><b>Note</b> the MAC address or Device ID (and Device Key) shown on your TV.</span></li><li><span><b>Add</b> the M3U link we send you on the app’s official website, using that ID.</span></li><li><span><b>Restart</b> the app on your TV.</span></li></ol></div><div class="app-grid">
+        <article class="app-card rec">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">IB</span><img src="assets/apps/ibo-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>IBO Player</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag paid">Paid after trial</span></div></div>
+          </div>
+          <p>Add your playlist on the IBO Player website using the ID shown on your TV.</p>
+          <div class="app-actions"><a class="get" href="https://iboplayer.com" target="_blank" rel="noopener">Official website</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20IBO%20Player%20on%20my%20Samsung%20%2F%20LG%20TV." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+        <article class="app-card">
+          <div class="app-top">
+            <div class="app-logo" aria-hidden="true"><span class="mono">HP</span><img src="assets/apps/hot-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
+            <div><h3>Hot Player</h3><div class="tags"><span class="tag paid">Paid after trial</span></div></div>
+          </div>
+          <p>Add your M3U link on the Hot Player website using the MAC address shown on your TV.</p>
+          <div class="app-actions"><a class="get" href="https://hotplayer.app" target="_blank" rel="noopener">Official website</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Hot%20Player%20on%20my%20Samsung%20%2F%20LG%20TV." target="_blank" rel="noopener">Need help?</a></div>
+        </article>
+      </div></div>
+  </div>
+  <div class="dev-panel" id="iphone" role="tabpanel" aria-labelledby="tab-iphone">
+    <div class="panel-head"><h2>iPhone &amp; iPad</h2><p>We set this one up with you personally.</p></div><div class="panel-grid"><div class="steps-card"><h3>Setup in 3 steps</h3><ol class="steps-list"><li><span><b>Message us</b> on WhatsApp with your iPhone or iPad model.</span></li><li><span><b>We send</b> you the right app and your login details.</span></li><li><span><b>Install and log in.</b> We guide you at every step.</span></li></ol></div><div class="app-grid">
+        <article class="app-card rec wide">
+          <div class="app-top">
+            <div class="app-logo ios-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5h3M12 19h.01"/></svg></div>
+            <div><h3>Get your iPhone app from us</h3><div class="tags"><span class="tag rec">Guided setup</span></div></div>
+          </div>
+          <p>Apps for iPhone and iPad change often. Message us with your device and we will send you the right app and your login details.</p>
+          <div class="app-actions"><a class="wa" href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20IPTV%20app%20for%20my%20iPhone%20%2F%20iPad.%20Please%20guide%20me." target="_blank" rel="noopener">Contact us on WhatsApp</a></div>
+        </article>
+      </div></div>
   </div>
 </section>
 
-<!-- SMART PICKER -->
-<section style="background:var(--bg2);padding-top:64px;padding-bottom:64px">
-  <div class="picker reveal">
-    <div class="sec-eye">Quick Picker</div>
-    <h3>Which app should I use?</h3>
-    <p>Tap your device and we will show the best app for it, plus a one-tap WhatsApp message to get help.</p>
-    <div class="pick-opts" role="group" aria-label="Choose your device">
-      <button type="button" class="pick-btn" data-pick="android-phone" aria-pressed="false">Android Phone</button>
-      <button type="button" class="pick-btn" data-pick="android-tv" aria-pressed="false">Android TV / Box</button>
-      <button type="button" class="pick-btn" data-pick="firestick" aria-pressed="false">Firestick</button>
-      <button type="button" class="pick-btn" data-pick="samsung" aria-pressed="false">Samsung TV</button>
-      <button type="button" class="pick-btn" data-pick="lg" aria-pressed="false">LG TV</button>
-      <button type="button" class="pick-btn" data-pick="iphone" aria-pressed="false">iPhone / iPad</button>
-    </div>
-    <div class="pick-result" id="pickResult" aria-live="polite"></div>
-  </div>
-</section>
-
-<!-- ANDROID PHONE -->
-<section id="android-phone">
-  
-    <div class="dev-head reveal">
-      <div class="feat-icon g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg></div>
-      <div><h2>Android Phone &amp; Tablet</h2><p>Install from Google Play, log in with Xtream Codes and start watching.</p></div>
-    </div>
-  <div class="guide-steps">
-      <div class="guide-step reveal"><div class="step-num">1</div><div><h3>Install the app</h3><p>Open Google Play, search for the app below and tap Install.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">2</div><div><h3>Choose Xtream login</h3><p>Open the app and pick “Login with Xtream Codes” (or “Add playlist” for an M3U link).</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">3</div><div><h3>Enter your details</h3><p>Type the server URL, username and password we sent you on WhatsApp.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">4</div><div><h3>Start watching</h3><p>Wait a minute while the list loads, then add your favorite channels.</p></div></div>
-    </div>
-  <div class="app-grid">
-      <article class="app-card rec reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">XC</span><img src="assets/apps/xciptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>XCIPTV Player</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag free">Free</span></div></div>
-        </div>
-        <p>Our first pick. Two built-in players, TV guide (EPG), favorites, catch-up and recording, with a clean Xtream Codes login.</p>
-        <div class="app-actions"><a class="get" href="https://play.google.com/store/apps/details?id=com.nathnetwork.xciptv" target="_blank" rel="noopener">Get on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20XCIPTV%20Player%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">TZ</span><img src="assets/apps/televizo.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>Televizo</h3><div class="tags"><span class="tag free">Free + Premium option</span></div></div>
-        </div>
-        <p>Simple, very stable player with multiple playlists, EPG and Chromecast support. Great if you want a lighter app.</p>
-        <div class="app-actions"><a class="get" href="https://play.google.com/store/apps/details?id=com.ottplay.ottplay" target="_blank" rel="noopener">Get on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Televizo%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">XP</span><img src="assets/apps/xp-iptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>XP IPTV</h3><div class="tags"><span class="tag free">Android</span></div></div>
-        </div>
-        <p>Search for it in the Play Store, install it and log in with the details we send you. Ask us if you get stuck.</p>
-        <div class="app-actions"><a class="get" href="https://play.google.com/store/search?c=apps&amp;q=XP%20IPTV" target="_blank" rel="noopener">Search on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20XP%20IPTV%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">XM</span><img src="assets/apps/xtream-master.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>Xtream Master</h3><div class="tags"><span class="tag free">Android</span></div></div>
-        </div>
-        <p>Search for it in the Play Store, install it and log in with the details we send you. Ask us if you get stuck.</p>
-        <div class="app-actions"><a class="get" href="https://play.google.com/store/search?c=apps&amp;q=Xtream%20Master%20IPTV" target="_blank" rel="noopener">Search on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Xtream%20Master%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">OP</span><img src="assets/apps/ott-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>OTT Player</h3><div class="tags"><span class="tag free">Android</span></div></div>
-        </div>
-        <p>A good backup option if another app does not suit your phone. Search for it in the Play Store and ask us for the right login format.</p>
-        <div class="app-actions"><a class="get" href="https://play.google.com/store/search?c=apps&amp;q=OTT%20Player%20IPTV" target="_blank" rel="noopener">Search on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20OTT%20Player%20on%20my%20Android%20phone." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-  </div>
-  <div class="chip-note">Want a full walkthrough? <a href="how-to-setup-iptv-on-android-phone.html">Android phone guide</a><a href="iptv-smarters-pro-setup-guide-pakistan.html">IPTV Smarters Pro guide</a></div>
-</section>
-
-<!-- ANDROID TV / BOX -->
-<section id="android-tv" style="background:var(--bg2)">
-  
-    <div class="dev-head reveal">
-      <div class="feat-icon b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="9" rx="2.5"/><path d="M7 12.5h.01M11 12.5h6"/><path d="M8 8V6M16 8V6"/></svg></div>
-      <div><h2>Android TV &amp; TV Box</h2><p>For Android TV, Google TV, Mi Box, Nvidia Shield and most Android TV boxes.</p></div>
-    </div>
-  <div class="guide-steps">
-      <div class="guide-step reveal"><div class="step-num">1</div><div><h3>Open Google Play on your TV</h3><p>Use the remote to open the Play Store and search for the app.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">2</div><div><h3>Install and open it</h3><p>Select Install, then open the app with your remote.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">3</div><div><h3>Log in</h3><p>Enter your Xtream Codes details. Tip: use your phone as a TV remote keyboard to type long URLs faster.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">4</div><div><h3>Enjoy</h3><p>Your channels, movies and series load automatically.</p></div></div>
-    </div>
-  <div class="app-grid">
-      <article class="app-card rec reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">XC</span><img src="assets/apps/xciptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>XCIPTV Player</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag free">Free</span></div></div>
-        </div>
-        <p>Built for the TV remote and D-pad, with a full TV guide and easy favorites. Install it from Google Play on your TV or box.</p>
-        <div class="app-actions"><a class="get" href="https://play.google.com/store/apps/details?id=com.nathnetwork.xciptv" target="_blank" rel="noopener">Get on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20XCIPTV%20Player%20on%20my%20Android%20TV%20%2F%20TV%20box." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">TZ</span><img src="assets/apps/televizo.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>Televizo</h3><div class="tags"><span class="tag free">Free + Premium option</span></div></div>
-        </div>
-        <p>Smooth on Android TV and set-top boxes, with multi-playlist support and a simple layout that is easy to use from the sofa.</p>
-        <div class="app-actions"><a class="get" href="https://play.google.com/store/apps/details?id=com.ottplay.ottplay" target="_blank" rel="noopener">Get on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Televizo%20on%20my%20Android%20TV%20%2F%20TV%20box." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">XP</span><img src="assets/apps/xp-iptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>XP IPTV</h3><div class="tags"><span class="tag free">Android TV</span></div></div>
-        </div>
-        <p>Search for it in the Play Store on your TV, install it and log in with the details we send you.</p>
-        <div class="app-actions"><a class="get" href="https://play.google.com/store/search?c=apps&amp;q=XP%20IPTV" target="_blank" rel="noopener">Search on Google Play</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20XP%20IPTV%20on%20my%20Android%20TV%20%2F%20TV%20box." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-  </div>
-  <div class="note"><b>No Play Store on your box?</b> Some cheaper boxes do not have it. Message us on WhatsApp and we will show you how to install the app with a Downloader code.</div>
-  <div class="chip-note">More help: <a href="how-to-setup-iptv-on-android-tv-box.html">Android TV box guide</a><a href="tivimate-setup-guide-pakistan.html">TiviMate guide</a></div>
-</section>
-
-<!-- FIRESTICK -->
-<section id="firestick">
-  
-    <div class="dev-head reveal">
-      <div class="feat-icon a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="14" height="7" rx="2"/><path d="M17 12.5h3.5M6.5 12.5h4"/></svg></div>
-      <div><h2>Amazon Firestick &amp; Fire TV</h2><p>On Firestick, most IPTV apps are installed with the Downloader app and a short code.</p></div>
-    </div>
-  <div class="code-box reveal">
-    <div>
-      <h3>Confirm your Downloader code on WhatsApp first</h3>
-      <p>App developers change their download links from time to time, so an old code can stop working. Tell us which app you want and we will send you the current, working code.</p>
-    </div>
-    <a class="btn-whatsapp" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20my%20Amazon%20Firestick." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Get my Downloader code</a>
-  </div>
-  <div class="guide-steps">
-      <div class="guide-step reveal"><div class="step-num">1</div><div><h3>Install Downloader</h3><p>On your Firestick, open Find, search “Downloader” and install the app from the Amazon Appstore.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">2</div><div><h3>Allow installs</h3><p>Go to Settings, My Fire TV, Developer Options, Install unknown apps and turn Downloader ON. If you do not see Developer Options, open Settings, My Fire TV, About and click your device name 7 times.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">3</div><div><h3>Enter the code</h3><p>Open Downloader, go to Home, type the code we send you, press Go and then Install.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">4</div><div><h3>Log in</h3><p>Open the app, enter your login details from WhatsApp and start watching.</p></div></div>
-    </div>
-  <div class="app-grid four">
-      <article class="app-card rec reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">XC</span><img src="assets/apps/xciptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>XCIPTV Player</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag free">Free</span></div></div>
-        </div>
-        <p>Our first pick for Firestick. Fast, free and easy to log into with Xtream details.</p>
-        <div class="app-actions"><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20XCIPTV%20Player%20on%20my%20Amazon%20Firestick." target="_blank" rel="noopener">Get Downloader code on WhatsApp</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">XP</span><img src="assets/apps/xp-iptv.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>XP IPTV</h3><div class="tags"><span class="tag free">Fire TV</span></div></div>
-        </div>
-        <p>Ask us for the Downloader code and we will confirm it works with your Fire TV model.</p>
-        <div class="app-actions"><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20XP%20IPTV%20on%20my%20Amazon%20Firestick." target="_blank" rel="noopener">Get Downloader code on WhatsApp</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">IB</span><img src="assets/apps/ibo-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>IBO Player</h3><div class="tags"><span class="tag paid">Paid after trial</span></div></div>
-        </div>
-        <p>Popular on Fire TV, Samsung and LG. Free trial first, then a paid activation on the official site.</p>
-        <div class="app-actions"><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20IBO%20Player%20on%20my%20Amazon%20Firestick." target="_blank" rel="noopener">Get Downloader code on WhatsApp</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">HP</span><img src="assets/apps/hot-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>Hot Player</h3><div class="tags"><span class="tag paid">Paid after trial</span></div></div>
-        </div>
-        <p>Simple MAC-based player with playlist upload on its website. Free trial first, then paid activation.</p>
-        <div class="app-actions"><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20please%20send%20me%20the%20latest%20Downloader%20code%20for%20Hot%20Player%20on%20my%20Amazon%20Firestick." target="_blank" rel="noopener">Get Downloader code on WhatsApp</a></div>
-      </article>
-  </div>
-  <div class="chip-note">Full walkthrough: <a href="firestick-iptv-setup-guide-pakistan.html">Firestick setup guide</a></div>
-</section>
-
-<!-- SAMSUNG & LG -->
-<section id="samsung-lg" style="background:var(--bg2)">
-  
-    <div class="dev-head reveal">
-      <div class="feat-icon g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12" rx="2"/><path d="M9 20h6M12 16v4"/><path d="M8.5 10.2a5 5 0 0 1 7 0M10.3 12a2.5 2.5 0 0 1 3.4 0"/></svg></div>
-      <div><h2>Samsung &amp; LG Smart TV</h2><p>Hot Player and IBO Player are the two players we recommend on Samsung (Tizen) and LG (webOS).</p></div>
-    </div>
-  <div class="note warn" style="margin:0 auto 26px"><b>Good to know:</b> free IPTV players are generally not available in the Samsung and LG app stores. Hot Player and IBO Player give you a free trial, then ask for a paid activation. That fee is paid to the app developer on their official website, not to us. Not sure? Ask us before paying.</div>
-  <div class="guide-steps">
-      <div class="guide-step reveal"><div class="step-num">1</div><div><h3>Install the player</h3><p>Samsung: open Smart Hub, then Apps. LG: open the LG Content Store. Search for “Hot Player” or “IBO Player” and install it.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">2</div><div><h3>Note your device ID</h3><p>Open the app. It shows a MAC address or Device ID (and a Device Key for IBO Player). Keep that screen open.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">3</div><div><h3>Add your playlist</h3><p>On your phone or PC, open the app’s official website, enter the ID from your TV and paste the M3U link we sent you on WhatsApp.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">4</div><div><h3>Restart the app</h3><p>Close and reopen the app on your TV. Your channels load automatically.</p></div></div>
-    </div>
-  <div class="app-grid two">
-      <article class="app-card rec reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">IB</span><img src="assets/apps/ibo-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>IBO Player</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag paid">Paid after trial</span></div></div>
-        </div>
-        <p>Works on Samsung (Tizen) and LG (webOS). You add your playlist on the IBO Player website using the Device ID and Device Key shown on your TV.</p>
-        <div class="app-actions"><a class="get" href="https://iboplayer.com" target="_blank" rel="noopener">Official website</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20IBO%20Player%20on%20my%20Samsung%20%2F%20LG%20TV." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-      <article class="app-card reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">HP</span><img src="assets/apps/hot-player.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>Hot Player</h3><div class="tags"><span class="tag paid">Paid after trial</span></div></div>
-        </div>
-        <p>Works on Samsung and LG TVs. You add your M3U link on the Hot Player website using the MAC address shown on your TV.</p>
-        <div class="app-actions"><a class="get" href="https://hotplayer.app" target="_blank" rel="noopener">Official website</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Hot%20Player%20on%20my%20Samsung%20%2F%20LG%20TV." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-  </div>
-  <div class="chip-note">More help: <a href="how-to-setup-iptv-on-samsung-smart-tv.html">Samsung TV guide</a><a href="how-to-setup-iptv-on-lg-smart-tv.html">LG TV guide</a></div>
-</section>
-
-<!-- iPHONE -->
-<section id="iphone">
-  
-    <div class="dev-head reveal">
-      <div class="feat-icon b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5h3"/><path d="M12 19h.01"/></svg></div>
-      <div><h2>iPhone &amp; iPad</h2><p>Smarters Player Lite is a simple, popular player for iOS and iPadOS.</p></div>
-    </div>
-  <div class="guide-steps">
-      <div class="guide-step reveal"><div class="step-num">1</div><div><h3>Find the right app</h3><p>Open the App Store and search “Smarters Player Lite”. Choose the one by WHMCS SMARTERS, as there are many look-alike apps.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">2</div><div><h3>Choose Xtream login</h3><p>Open the app and tap “Login with Xtream Codes API”.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">3</div><div><h3>Enter your details</h3><p>Type any name, then the username, password and server URL we sent you. Labels can differ slightly between versions.</p></div></div>
-      <div class="guide-step reveal"><div class="step-num">4</div><div><h3>Add user and watch</h3><p>Tap Add User, wait for the list to load and start streaming.</p></div></div>
-    </div>
-  <div class="app-grid one">
-      <article class="app-card rec reveal">
-        <div class="app-top">
-          <div class="app-logo" aria-hidden="true"><span class="mono">SL</span><img src="assets/apps/smarters-lite.png" alt="" width="54" height="54" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></div>
-          <div><h3>Smarters Player Lite</h3><div class="tags"><span class="tag rec">Recommended</span><span class="tag free">Free</span></div></div>
-        </div>
-        <p>The iPhone and iPad app we recommend. Log in with Xtream Codes and get live TV, movies and series in one place.</p>
-        <div class="app-actions"><a class="get" href="https://apps.apple.com/us/app/smarters-player-lite/id1628995509" target="_blank" rel="noopener">Get on the App Store</a><a class="ask" href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20Smarters%20Player%20Lite%20on%20my%20iPhone%20%2F%20iPad." target="_blank" rel="noopener">Need help?</a></div>
-      </article>
-  </div>
-  <div class="chip-note">More help: <a href="how-to-setup-iptv-on-iphone.html">iPhone guide</a><a href="how-to-setup-iptv-on-apple-tv.html">Apple TV guide</a></div>
-</section>
-
-<!-- FAQ -->
 <section style="background:var(--bg2)">
   <div class="max-w text-center">
     <div class="sec-eye">Quick Answers</div>
     <h2 class="sec-title">Setup FAQs</h2>
-    <p class="sec-sub" style="margin:0 auto 40px">The questions we get asked most while helping customers set up their apps.</p>
   </div>
-  <div class="faq-wrap">
-    <div class="faq-item"><div class="faq-q" role="button" tabindex="0">Which app is best for my device?<span class="plus">+</span></div><div class="faq-ans">For Android phones, tablets and TVs we suggest XCIPTV Player. On Samsung and LG TVs use IBO Player or Hot Player. On iPhone and iPad use Smarters Player Lite. Not sure? Message us and we will pick one for you.</div></div>
+  <div class="faq-wrap" style="margin-top:32px">
+    <div class="faq-item"><div class="faq-q" role="button" tabindex="0">Which app is best for my device?<span class="plus">+</span></div><div class="faq-ans">For Android phones, tablets and TVs we suggest XCIPTV Player. On Samsung and LG TVs use IBO Player or Hot Player. For iPhone and iPad, message us and we will guide you.</div></div>
     <div class="faq-item"><div class="faq-q" role="button" tabindex="0">Why do the Samsung and LG apps ask for payment?<span class="plus">+</span></div><div class="faq-ans">Free IPTV players are generally not available in the Samsung and LG app stores. The players that work well there, like IBO Player and Hot Player, give a free trial and then ask for a paid activation. That fee goes to the app developer, not to us, so only pay on the app’s official website.</div></div>
-    <div class="faq-item"><div class="faq-q" role="button" tabindex="0">Where do I get the Downloader code for Firestick?<span class="plus">+</span></div><div class="faq-ans">Downloader codes can change when app developers update their links, so we confirm the current code for you on WhatsApp before you install. Tap any “Get Downloader code” button and we will reply with it.</div></div>
-    <div class="faq-item"><div class="faq-q" role="button" tabindex="0">What is the difference between Xtream Codes and M3U?<span class="plus">+</span></div><div class="faq-ans">Xtream Codes is a server URL, username and password. It loads channels, movies, series and the TV guide in one login. M3U is a single playlist link. Use whichever your app supports. We provide both.</div></div>
-    <div class="faq-item"><div class="faq-q" role="button" tabindex="0">Do these apps come with channels?<span class="plus">+</span></div><div class="faq-ans">No. These apps are players only. Your channels, movies and series come from your Arsal Digital subscription.</div></div>
+    <div class="faq-item"><div class="faq-q" role="button" tabindex="0">Where do I get the Downloader code for Firestick?<span class="plus">+</span></div><div class="faq-ans">Downloader codes can change when app developers update their links, so we confirm the current code for you on WhatsApp before you install. Tap any “Get code” button and we will reply with it.</div></div>
     <div class="faq-item"><div class="faq-q" role="button" tabindex="0">My app says login failed. What should I do?<span class="plus">+</span></div><div class="faq-ans">Check that the server URL, username and password are typed exactly as we sent them, with no extra spaces. If it still fails, send us a screenshot on WhatsApp and we will fix it quickly.</div></div>
   </div>
 </section>
 
-<!-- CTA -->
 <section>
-  <div class="cta-banner reveal">
+  <div class="max-w text-center">
+    <h2 class="sec-title" style="font-size:clamp(22px,3vw,28px);margin-bottom:18px">Want a full walkthrough?</h2>
+  </div>
+  <div class="chip-row"><a href="how-to-setup-iptv-on-android-phone.html">Android phone</a><a href="how-to-setup-iptv-on-android-tv-box.html">Android TV box</a><a href="firestick-iptv-setup-guide-pakistan.html">Firestick</a><a href="how-to-setup-iptv-on-samsung-smart-tv.html">Samsung TV</a><a href="how-to-setup-iptv-on-lg-smart-tv.html">LG TV</a><a href="how-to-setup-iptv-on-iphone.html">iPhone</a><a href="how-to-setup-iptv-on-apple-tv.html">Apple TV</a><a href="iptv-smarters-pro-setup-guide-pakistan.html">Smarters Pro</a><a href="tivimate-setup-guide-pakistan.html">TiviMate</a></div>
+  <div class="cta-banner reveal" style="margin-top:56px">
     <h2>Need Help With Your Setup?</h2>
     <p>Tell us your device and we will guide you step by step on WhatsApp, usually within minutes.</p>
     <a href="https://wa.me/923195981362?text=Hi%2C%20I%20need%20help%20setting%20up%20my%20IPTV%20app." target="_blank" rel="noopener" class="btn-secondary">Chat on WhatsApp →</a>
   </div>
-  <p class="disclaimer" style="margin-top:26px">App names and logos belong to their respective owners. Arsal Digital is not affiliated with them. Apps shown are media players only and do not include any channels.</p>
+  <p class="disclaimer">App names and logos belong to their respective owners. Arsal Digital is not affiliated with them. Apps shown are media players only and do not include any channels.</p>
 </section>
 
 <footer>
@@ -541,31 +406,32 @@ section[id]{scroll-margin-top:84px}
 <script src="script.js"></script>
 <script>
 (function(){
-  var WA='923195981362';
-  var DATA={
-    'android-phone':{dev:'Android phone',app:'XCIPTV Player',why:'Free, with built-in players, a TV guide and easy Xtream Codes login. It is the most reliable choice for Android phones and tablets.',sec:'#android-phone'},
-    'android-tv':{dev:'Android TV / TV box',app:'XCIPTV Player (or Televizo)',why:'Both are made for the TV remote. XCIPTV has the most features, and Televizo is the lighter, simpler option.',sec:'#android-tv'},
-    'firestick':{dev:'Amazon Firestick',app:'XCIPTV Player via Downloader',why:'Install it with the Downloader app. Codes change, so message us first and we will send the current working code.',sec:'#firestick'},
-    'samsung':{dev:'Samsung TV',app:'IBO Player or Hot Player',why:'Free players are not available on the Samsung store, so these two are the best choices. They have a free trial, then a paid activation on the official site.',sec:'#samsung-lg'},
-    'lg':{dev:'LG TV',app:'IBO Player or Hot Player',why:'Free players are not available on the LG Content Store, so these two are the best choices. They have a free trial, then a paid activation on the official site.',sec:'#samsung-lg'},
-    'iphone':{dev:'iPhone / iPad',app:'Smarters Player Lite',why:'A simple, free player for iOS. Choose the version by WHMCS SMARTERS in the App Store, and log in with Xtream Codes.',sec:'#iphone'}
-  };
-  var box=document.getElementById('pickResult');
-  var btns=document.querySelectorAll('.pick-btn');
-  function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML;}
-  btns.forEach(function(b){
-    b.addEventListener('click',function(){
-      var d=DATA[b.getAttribute('data-pick')]; if(!d) return;
-      btns.forEach(function(x){x.classList.remove('active');x.setAttribute('aria-pressed','false');});
-      b.classList.add('active'); b.setAttribute('aria-pressed','true');
-      var msg='Hi, my device is '+d.dev+'. Please help me set up '+d.app+'.';
-      box.innerHTML='<div class="pr-label">Best app for your '+esc(d.dev)+'</div>'+
-        '<div class="pr-app">'+esc(d.app)+'</div><p>'+esc(d.why)+'</p>'+
-        '<div class="pr-actions"><a class="btn-primary" href="'+d.sec+'">See the steps</a>'+
-        '<a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/'+WA+'?text='+encodeURIComponent(msg)+'">Ask on WhatsApp</a></div>';
-      box.classList.add('show');
+  var tabs=[].slice.call(document.querySelectorAll('.dev-tab'));
+  var panels=[].slice.call(document.querySelectorAll('.dev-panel'));
+  function show(id){
+    var ok=tabs.some(function(t){return t.getAttribute('data-tab')===id;});
+    if(!ok) return false;
+    tabs.forEach(function(t){
+      var on=t.getAttribute('data-tab')===id;
+      t.classList.toggle('active',on); t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1;
+    });
+    panels.forEach(function(p){p.classList.toggle('active',p.id===id);});
+    return true;
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){
+      var id=t.getAttribute('data-tab'); show(id);
+      try{history.replaceState(null,'','#'+id);}catch(e){}
+    });
+    t.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight') n=tabs[(i+1)%tabs.length];
+      if(e.key==='ArrowLeft') n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault(); n.focus(); n.click();}
     });
   });
+  function fromHash(){ var h=(location.hash||'').slice(1); if(h) show(h); }
+  window.addEventListener('hashchange',fromHash); fromHash();
   document.querySelectorAll('.faq-q').forEach(function(q){
     q.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();q.click();}});
   });
