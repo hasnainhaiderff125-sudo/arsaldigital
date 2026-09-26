@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IPTV Packages & PKR Pricing 2026 | Arsal Digital Pakistan</title>
-<meta name="description" content="Arsal Digital IPTV packages priced in PKR only — Basic, Standard & Premium plans with 12,000+ channels. Best IPTV subscription pricing for Pakistan and overseas Pakistanis. Order instantly on WhatsApp.">
+<title>IPTV Packages, Plans &amp; PKR Prices | Arsal Digital Pakistan</title>
+<meta name="description" content="Compare Arsal Digital IPTV subscription plans in Pakistan: Basic, Standard and Premium, from 1 month to 1 year, priced in PKR. Order on WhatsApp.">
 <link rel="canonical" href="https://arsaldigital.com/packages.html">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
@@ -42,9 +42,18 @@
   "provider":{"@type":"Organization","name":"Arsal Digital","url":"https://arsaldigital.com/"},
   "areaServed":["Pakistan","United Kingdom","United States","Canada","Saudi Arabia","United Arab Emirates"],
   "offers":[
-    {"@type":"Offer","name":"Basic Plan - 1 Month","priceCurrency":"PKR","price":"450"},
-    {"@type":"Offer","name":"Standard Plan - 1 Month","priceCurrency":"PKR","price":"650"},
-    {"@type":"Offer","name":"Premium Plan - 1 Month","priceCurrency":"PKR","price":"900"}
+    {"@type":"Offer","name":"Basic Plan - 1 Month","priceCurrency":"PKR","price":"450","url":"https://arsaldigital.com/packages.html#basic"},
+    {"@type":"Offer","name":"Basic Plan - 3 Months","priceCurrency":"PKR","price":"1100","url":"https://arsaldigital.com/packages.html#basic"},
+    {"@type":"Offer","name":"Basic Plan - 6 Months","priceCurrency":"PKR","price":"2000","url":"https://arsaldigital.com/packages.html#basic"},
+    {"@type":"Offer","name":"Basic Plan - 1 Year","priceCurrency":"PKR","price":"3500","url":"https://arsaldigital.com/packages.html#basic"},
+    {"@type":"Offer","name":"Standard Plan - 1 Month","priceCurrency":"PKR","price":"650","url":"https://arsaldigital.com/packages.html#standard"},
+    {"@type":"Offer","name":"Standard Plan - 3 Months","priceCurrency":"PKR","price":"1700","url":"https://arsaldigital.com/packages.html#standard"},
+    {"@type":"Offer","name":"Standard Plan - 6 Months","priceCurrency":"PKR","price":"3000","url":"https://arsaldigital.com/packages.html#standard"},
+    {"@type":"Offer","name":"Standard Plan - 1 Year","priceCurrency":"PKR","price":"5500","url":"https://arsaldigital.com/packages.html#standard"},
+    {"@type":"Offer","name":"Premium Plan - 1 Month","priceCurrency":"PKR","price":"900","url":"https://arsaldigital.com/packages.html#premium"},
+    {"@type":"Offer","name":"Premium Plan - 3 Months","priceCurrency":"PKR","price":"2300","url":"https://arsaldigital.com/packages.html#premium"},
+    {"@type":"Offer","name":"Premium Plan - 6 Months","priceCurrency":"PKR","price":"4000","url":"https://arsaldigital.com/packages.html#premium"},
+    {"@type":"Offer","name":"Premium Plan - 1 Year","priceCurrency":"PKR","price":"7000","url":"https://arsaldigital.com/packages.html#premium"}
   ]
 }
 </script>
@@ -55,7 +64,7 @@
 <header>
   <div class="nav-wrap">
     <a href="./" class="nav-logo">
-      <div class="nav-mark"><img src="assets/logo-nav.png" alt="Arsal Digital logo" width="40" height="40" loading="lazy"></div>
+      <div class="nav-mark"><img src="assets/logo-nav.png" alt="Arsal Digital logo" width="40" height="40"></div>
       <span class="nav-logo-text">Arsal<span>Digital</span></span>
     </a>
     <nav class="nav-links">
@@ -67,7 +76,7 @@
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-actions">
-      <a href="https://wa.me/923195981362?text=Hi%2C+I+want+to+know+more+about+packages" target="_blank" class="nav-cta btn-whatsapp">WhatsApp Us</a>
+      <a href="https://wa.me/923195981362?text=Hi%2C+I+want+to+know+more+about+packages" target="_blank" class="nav-cta btn-whatsapp" rel="noopener">WhatsApp Us</a>
       <button type="button" class="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <defs><mask id="tiMask" maskUnits="userSpaceOnUse" x="-6" y="-6" width="36" height="36"><rect x="-6" y="-6" width="36" height="36" fill="#fff"/><circle class="ti-cut" cx="30" cy="-6" r="7" fill="#000"/></mask></defs>
@@ -88,7 +97,7 @@
     <a href="blog.html">Blog</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <a href="https://wa.me/923195981362" target="_blank" class="nav-cta btn-whatsapp">WhatsApp Us</a>
+    <a href="https://wa.me/923195981362" target="_blank" class="nav-cta btn-whatsapp" rel="noopener">WhatsApp Us</a>
   </div>
 </header>
 
@@ -123,12 +132,173 @@
 </div>
 
 <section>
-  <div class="tier-toggle">
+  <div class="tier-toggle" role="tablist" aria-label="Choose a plan tier">
     <button class="tier-btn" data-tier="basic">Basic</button>
-    <button class="tier-btn" data-tier="standard">Standard</button>
+    <button class="tier-btn active" data-tier="standard">Standard</button>
     <button class="tier-btn" data-tier="premium">Premium</button>
   </div>
-  <div class="pricing-grid" id="pagePricingGrid"></div>
+  <div class="pricing-grid" id="basic" data-tier-panel="basic" style="display:none">
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--sky)">Basic Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">1 Month</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">450</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>8,000+ Live Channels</li><li><span class="chk">&#10003;</span>40,000+ Movies</li><li><span class="chk">&#10003;</span>2,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>24/7 WhatsApp Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Basic%20Plan%20%E2%80%93%201%20Month%20%28PKR%20450%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--sky)">Basic Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">3 Months</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">1,100</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>8,000+ Live Channels</li><li><span class="chk">&#10003;</span>40,000+ Movies</li><li><span class="chk">&#10003;</span>2,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>24/7 WhatsApp Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Basic%20Plan%20%E2%80%93%203%20Months%20%28PKR%201%2C100%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--sky)">Basic Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">6 Months</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">2,000</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>8,000+ Live Channels</li><li><span class="chk">&#10003;</span>40,000+ Movies</li><li><span class="chk">&#10003;</span>2,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>24/7 WhatsApp Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Basic%20Plan%20%E2%80%93%206%20Months%20%28PKR%202%2C000%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card feat reveal">
+      <div class="plan-badge">Best Value</div>
+      <div class="plan-name" style="color:var(--sky)">Basic Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">1 Year</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">3,500</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>8,000+ Live Channels</li><li><span class="chk">&#10003;</span>40,000+ Movies</li><li><span class="chk">&#10003;</span>2,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>24/7 WhatsApp Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Basic%20Plan%20%E2%80%93%201%20Year%20%28PKR%203%2C500%29" class="btn-plan fil" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </div>
+  <div class="pricing-grid" id="standard" data-tier-panel="standard">
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--accent)">Standard Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">1 Month</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">650</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>12,000+ Live Channels</li><li><span class="chk">&#10003;</span>50,000+ Movies</li><li><span class="chk">&#10003;</span>8,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>Priority WhatsApp Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Standard%20Plan%20%E2%80%93%201%20Month%20%28PKR%20650%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--accent)">Standard Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">3 Months</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">1,700</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>12,000+ Live Channels</li><li><span class="chk">&#10003;</span>50,000+ Movies</li><li><span class="chk">&#10003;</span>8,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>Priority WhatsApp Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Standard%20Plan%20%E2%80%93%203%20Months%20%28PKR%201%2C700%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--accent)">Standard Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">6 Months</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">3,000</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>12,000+ Live Channels</li><li><span class="chk">&#10003;</span>50,000+ Movies</li><li><span class="chk">&#10003;</span>8,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>Priority WhatsApp Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Standard%20Plan%20%E2%80%93%206%20Months%20%28PKR%203%2C000%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card feat reveal">
+      <div class="plan-badge">Best Value</div>
+      <div class="plan-name" style="color:var(--accent)">Standard Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">1 Year</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">5,500</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>12,000+ Live Channels</li><li><span class="chk">&#10003;</span>50,000+ Movies</li><li><span class="chk">&#10003;</span>8,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>Priority WhatsApp Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Standard%20Plan%20%E2%80%93%201%20Year%20%28PKR%205%2C500%29" class="btn-plan fil" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </div>
+  <div class="pricing-grid" id="premium" data-tier-panel="premium" style="display:none">
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--amber)">Premium Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">1 Month</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">900</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>14,000+ Live Channels</li><li><span class="chk">&#10003;</span>100,000+ Movies</li><li><span class="chk">&#10003;</span>12,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>Dedicated VIP Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Premium%20Plan%20%E2%80%93%201%20Month%20%28PKR%20900%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--amber)">Premium Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">3 Months</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">2,300</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>14,000+ Live Channels</li><li><span class="chk">&#10003;</span>100,000+ Movies</li><li><span class="chk">&#10003;</span>12,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>Dedicated VIP Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Premium%20Plan%20%E2%80%93%203%20Months%20%28PKR%202%2C300%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card reveal">
+      
+      <div class="plan-name" style="color:var(--amber)">Premium Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">6 Months</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">4,000</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>14,000+ Live Channels</li><li><span class="chk">&#10003;</span>100,000+ Movies</li><li><span class="chk">&#10003;</span>12,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>Dedicated VIP Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Premium%20Plan%20%E2%80%93%206%20Months%20%28PKR%204%2C000%29" class="btn-plan out" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="plan-card feat reveal">
+      <div class="plan-badge">Best Value</div>
+      <div class="plan-name" style="color:var(--amber)">Premium Plan</div>
+      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">1 Year</div>
+      <div class="plan-price">
+        <span class="plan-cur">PKR</span><span class="plan-amt">7,000</span>
+      </div>
+      <div class="plan-div" style="margin:14px 0 10px"></div>
+      <ul class="plan-feats">
+<li><span class="chk">&#10003;</span>14,000+ Live Channels</li><li><span class="chk">&#10003;</span>100,000+ Movies</li><li><span class="chk">&#10003;</span>12,000+ Series</li><li><span class="chk">&#10003;</span>M3U + Xtream Codes</li><li><span class="chk">&#10003;</span>Dedicated VIP Support</li>
+      </ul>
+      <a href="https://wa.me/923195981362?text=Hi%2C%20I%20want%20the%20Premium%20Plan%20%E2%80%93%201%20Year%20%28PKR%207%2C000%29" class="btn-plan fil" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </div>
 </section>
 
 <!-- COMPARISON -->
@@ -185,11 +355,28 @@
   </div>
 </section>
 
+<section>
+  <div class="max-w text-center">
+    <div class="sec-eye">Helpful Next Steps</div>
+    <h2 class="sec-title" style="font-size:22px;margin-bottom:26px">Related Guides</h2>
+  </div>
+  <div class="loc-links">
+    <a href="iptv-app-setup-guide.html">IPTV App Setup Guide</a>
+    <a href="best-iptv-overseas-pakistanis.html">IPTV for Overseas Pakistanis</a>
+    <a href="jazzcash-iptv-subscription-guide.html">Pay via JazzCash</a>
+    <a href="easypaisa-iptv-subscription-guide.html">Pay via EasyPaisa</a>
+    <a href="bank-transfer-iptv-payment-guide-pakistan.html">Pay via Bank Transfer</a>
+    <a href="multi-screen-streaming-how-many-devices.html">Multiple Devices at Once</a>
+    <a href="iptv-family-plan-guide-pakistan.html">Choosing a Family Plan</a>
+    <a href="refund-policy.html">Refund Policy</a>
+  </div>
+</section>
+
 <section style="background:var(--bg2)">
   <div class="cta-banner reveal">
     <h2>Not Sure Which Plan to Pick?</h2>
     <p>Message us on WhatsApp — we'll recommend the right package for your household in under a minute.</p>
-    <a href="https://wa.me/923195981362?text=Hi%2C+I+need+help+choosing+a+package" target="_blank" class="btn-secondary">Ask on WhatsApp →</a>
+    <a href="https://wa.me/923195981362?text=Hi%2C+I+need+help+choosing+a+package" target="_blank" class="btn-secondary" rel="noopener">Ask on WhatsApp →</a>
   </div>
 </section>
 
@@ -200,14 +387,14 @@
         <div class="nav-mark"><img src="assets/logo-nav.png" alt="Arsal Digital logo" width="40" height="40" loading="lazy"></div>
         <span class="nav-logo-text" style="font-size:17px">Arsal<span>Digital</span></span>
       </a>
-      <p>Pakistan's trusted IPTV service for local &amp; overseas Pakistanis. 12,000+ channels, 75,000+ movies, 20,000+ series — zero buffering, priced in PKR.</p>
+      <p>IPTV service for Pakistan and overseas Pakistanis. 12,000+ live channels, PKR pricing, WhatsApp activation and support.</p>
     </div>
     <div class="footer-col">
       <h4>Packages</h4>
       <ul>
-        <li><a href="packages.html">Basic Plan</a></li>
-        <li><a href="packages.html">Standard Plan</a></li>
-        <li><a href="packages.html">Premium Plan</a></li>
+        <li><a href="packages.html#basic">Basic Plan</a></li>
+        <li><a href="packages.html#standard">Standard Plan</a></li>
+        <li><a href="packages.html#premium">Premium Plan</a></li>
         <li><a href="reseller.html">Reseller Panels</a></li>
       </ul>
     </div>
@@ -223,29 +410,30 @@
     <div class="footer-col">
       <h4>Get In Touch</h4>
       <ul>
-        <li><a href="https://wa.me/923195981362" target="_blank">WhatsApp: +92 319 5981362</a></li>
-        <li><a href="contact.html">Contact Form</a></li>
+        <li><a href="https://wa.me/923195981362" target="_blank" rel="noopener">WhatsApp: +92 319 5981362</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </div>
   <div style="max-width:1200px;margin:0 auto 20px;text-align:center;font-size:12.5px;color:var(--text3)">
-    IPTV Service Areas:
-    <a href="iptv-service-lahore.html" style="color:var(--text3);text-decoration:underline">Lahore</a> ·
-    <a href="iptv-service-karachi.html" style="color:var(--text3);text-decoration:underline">Karachi</a> ·
-    <a href="iptv-service-islamabad.html" style="color:var(--text3);text-decoration:underline">Islamabad</a> ·
+    <a href="best-iptv-overseas-pakistanis.html" style="color:var(--text3);text-decoration:underline">Overseas Pakistanis</a> ·
+    <a href="iptv-app-setup-guide.html" style="color:var(--text3);text-decoration:underline">App Setup Guide</a> ·
+    <a href="iptv-service-lahore.html" style="color:var(--text3);text-decoration:underline">IPTV in Lahore</a> ·
+    <a href="iptv-service-karachi.html" style="color:var(--text3);text-decoration:underline">IPTV in Karachi</a> ·
+    <a href="iptv-service-islamabad.html" style="color:var(--text3);text-decoration:underline">IPTV in Islamabad</a> ·
     <a href="iptv-for-pakistanis-in-uk.html" style="color:var(--text3);text-decoration:underline">UK Pakistanis</a>
   </div>
   <div class="footer-bottom">
     <span>© 2026 Arsal Digital. All rights reserved. · <a href="privacy-policy.html" style="color:var(--text3);text-decoration:underline">Privacy Policy</a> · <a href="terms-of-service.html" style="color:var(--text3);text-decoration:underline">Terms of Service</a> · <a href="refund-policy.html" style="color:var(--text3);text-decoration:underline">Refund Policy</a></span>
-    <span>Best IPTV Service in Pakistan · Serving Overseas Pakistanis Worldwide</span>
+    <span>IPTV for Pakistan &amp; Overseas Pakistanis</span>
   </div>
 </footer>
 
-<a href="https://wa.me/923195981362" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/923195981362" target="_blank" class="wa-float" aria-label="Chat on WhatsApp" rel="noopener">
   <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <script src="script.js"></script>
-<script>initPricing('standard','pagePricingGrid');</script>
+<script>initTierToggle();</script>
 </body>
 </html>

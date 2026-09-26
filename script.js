@@ -25,78 +25,31 @@ function initFAQ(){
   });
 }
 
-// ===== Packages page: tier + duration pricing (PKR only) =====
-const PLANS = {
-  basic:{
-    label:'Basic', color:'var(--sky)',
-    features:['8,000+ Live Channels','40,000+ Movies','2,000+ Series','M3U + Xtream Codes','24/7 WhatsApp Support'],
-    durations:[
-      {label:'1 Month', pkr:450},
-      {label:'3 Months', pkr:1100},
-      {label:'6 Months', pkr:2000},
-      {label:'1 Year', pkr:3500},
-    ]
-  },
-  standard:{
-    label:'Standard', color:'var(--accent)',
-    features:['12,000+ Live Channels','50,000+ Movies','8,000+ Series','M3U + Xtream Codes','Priority WhatsApp Support'],
-    durations:[
-      {label:'1 Month', pkr:650},
-      {label:'3 Months', pkr:1700},
-      {label:'6 Months', pkr:3000},
-      {label:'1 Year', pkr:5500},
-    ]
-  },
-  premium:{
-    label:'Premium', color:'var(--amber)',
-    features:['14,000+ Live Channels','100,000+ Movies','12,000+ Series','M3U + Xtream Codes','Dedicated VIP Support'],
-    durations:[
-      {label:'1 Month', pkr:900},
-      {label:'3 Months', pkr:2300},
-      {label:'6 Months', pkr:4000},
-      {label:'1 Year', pkr:7000},
-    ]
-  }
-};
-const WA_NUMBER = '923195981362';
+// ===== Packages page: tier toggle (pricing is static HTML; this only shows/hides panels) =====
+const TIER_COLORS = { basic:'var(--sky)', standard:'var(--accent)', premium:'var(--amber)' };
 
-function renderPricingGrid(planKey, gridId){
-  const plan = PLANS[planKey];
-  const grid = document.getElementById(gridId);
-  if(!grid || !plan) return;
-  const featured = 3; // 1-year highlighted (Best Value)
-  grid.innerHTML = plan.durations.map((d,i)=>`
-    <div class="plan-card ${i===featured?'feat':''} reveal">
-      ${i===featured?'<div class="plan-badge">Best Value</div>':''}
-      <div class="plan-name" style="color:${plan.color}">${plan.label} Plan</div>
-      <div class="plan-name" style="font-size:14px;opacity:.65;margin-top:2px;font-weight:600">${d.label}</div>
-      <div class="plan-price">
-        <span class="plan-cur">PKR</span><span class="plan-amt">${d.pkr.toLocaleString('en-US')}</span>
-      </div>
-      <div class="plan-div" style="margin:14px 0 10px"></div>
-      <ul class="plan-feats">
-        ${plan.features.map(f=>`<li><span class="chk">&#10003;</span>${f}</li>`).join('')}
-      </ul>
-      <a href="https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hi, I want the '+plan.label+' Plan – '+d.label+' (PKR '+d.pkr.toLocaleString('en-US')+')')}" class="btn-plan ${i===featured?'fil':'out'}" target="_blank">Order on WhatsApp</a>
-    </div>
-  `).join('');
+function showTier(tierKey){
+  document.querySelectorAll('[data-tier-panel]').forEach(panel=>{
+    panel.style.display = (panel.getAttribute('data-tier-panel')===tierKey) ? '' : 'none';
+  });
   document.querySelectorAll('.tier-btn').forEach(btn=>{
     const k = btn.getAttribute('data-tier');
     if(!k) return;
-    if(k===planKey){ btn.classList.add('active'); btn.style.background = plan.color; btn.style.borderColor='transparent'; }
+    if(k===tierKey){ btn.classList.add('active'); btn.style.background = TIER_COLORS[k]; btn.style.borderColor='transparent'; }
     else{ btn.classList.remove('active'); btn.style.background='var(--card)'; btn.style.borderColor='var(--border2)'; }
   });
-  initReveal();
 }
 
-function initPricing(defaultTier, gridId){
-  renderPricingGrid(defaultTier, gridId);
+function initTierToggle(){
   document.querySelectorAll('.tier-btn').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const k = btn.getAttribute('data-tier');
-      if(k) renderPricingGrid(k, gridId);
+      if(k) showTier(k);
     });
   });
+  // If the page was opened at #basic / #standard / #premium, show that tier
+  const hash = (location.hash || '').replace('#','');
+  if(['basic','standard','premium'].includes(hash)) showTier(hash);
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
